@@ -3,17 +3,58 @@
 <head>
   <meta charset="UTF-8">
   <title>Video Speed Scrubber</title>
+	 <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <div class="wrapper">
+  <!-- <div class="wrapper">
     <video class="flex" width="765" height="430" src="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4" controls></video>
     <div class="speed">
       <div class="speed-bar">1×</div>
     </div>
-  </div>
-
+  </div> -->
+<section>
+      <video src="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4"></video>
+      <div class="options">
+        <div class="progress-bar">
+          <div class="peak-rover"></div>
+        </div>
+        <div class="fr-aic" style="justify-content: space-between">
+          <div class="play-pause material-icons">play_arrow</div>
+          <input
+            type="range"
+            name="volume"
+            min="0"
+            max="10"
+            id="volume"
+            value="0"
+          />
+          <input
+            type="range"
+            name="speed"
+            min="0"
+            max="10"
+            id="speed"
+            value="5"
+          />
+          <button class="backWard fr-aic">
+            <span class="material-icons" style="transform: rotate(180deg)"
+              >fast_forward</span
+            >
+            <span>10</span>
+          </button>
+          <button class="forWard fr-aic">
+            <span class="material-icons">fast_forward</span>
+            <span>25</span>
+          </button>
+        </div>
+      </div>
+    </section>
+	<!--JS code connector  -->
 <script  src="./script.js">
   //Your code goes here
 </script>
